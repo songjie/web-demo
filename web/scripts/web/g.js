@@ -14,7 +14,7 @@ g.namespace = function(b) {
 		c[a[b]] = c[a[b]] || {}, i = (f = c[a[b]]) != null ? f : {}, c = i;
 	return c
 };
-// lmn namespace
+// com namespace
 g.namespace('com');
 
 
