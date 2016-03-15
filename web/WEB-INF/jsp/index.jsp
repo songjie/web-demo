@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +16,7 @@
 
 <script id="mainTemplate" type="text/x-jsrender">
 	<h3>{{:msg}}</h3> 
-	<p>Custom Date:{{date:datetime parse="YYYYMMDD" format="YYYY年MM月DD日"}}</p>
+	<p>Custom Date:{{date:datetime parse="YYYYMMDD" format="YYYYå¹´MMæDDæ¥"}}</p>
 	<p>Tomorrow:{{:~addDays(1)}} </p>
 </script>
 <script src="/components/jquery/jquery.min.js"></script>
