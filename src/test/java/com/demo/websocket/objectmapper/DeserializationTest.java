@@ -1,10 +1,3 @@
-/*
- * @(#)DeserializationTest.java $version 2016年3月14日
- *
- * Copyright 2016 LINE Corporation. All rights Reserved. 
- * LINE Corporation PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
-
 package com.demo.websocket.objectmapper;
 
 import java.io.IOException;
@@ -15,10 +8,6 @@ import com.demo.websocket.objectmapper.module.MyModule;
 import com.demo.websocket.objectmapper.module.Rectangle;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-/**
- * @author cn40085
- *
- */
 public class DeserializationTest {
 	@Test
 	public void test() throws IOException {

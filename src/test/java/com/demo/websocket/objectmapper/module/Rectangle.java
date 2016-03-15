@@ -1,16 +1,5 @@
-/*
- * @(#)Rectangle.java $version 2016年3月14日
- *
- * Copyright 2016 LINE Corporation. All rights Reserved. 
- * LINE Corporation PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
-
 package com.demo.websocket.objectmapper.module;
 
-/**
- * @author cn40085
- *
- */
 public class Rectangle extends BaseObject {
 	final private int w, h;
 

@@ -1,10 +1,3 @@
-/*
- * @(#)MyWebSocketHandler.java $version 2016年3月15日
- *
- * Copyright 2016 LINE Corporation. All rights Reserved. 
- * LINE Corporation PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
-
 package com.demo.websocket.handler;
 
 import java.io.IOException;
@@ -27,10 +20,6 @@ import com.google.gson.GsonBuilder;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * @author cn40085
- *
- */
 @Slf4j
 @Component
 public class MyWebSocketHandler implements WebSocketHandler {

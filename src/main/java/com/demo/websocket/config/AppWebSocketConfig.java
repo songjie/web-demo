@@ -1,10 +1,3 @@
-/*
- * @(#)AppWebSocketConfig.java $version 2016年3月11日
- *
- * Copyright 2016 LINE Corporation. All rights Reserved. 
- * LINE Corporation PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
-
 package com.demo.websocket.config;
 
 import javax.annotation.Resource;
@@ -21,10 +14,6 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 import com.demo.websocket.Interceptor.WebSocketInterceptor;
 import com.demo.websocket.handler.MyWebSocketHandler;
 
-/**
- * @author cn40085
- *
- */
 @Configuration
 @EnableWebSocketMessageBroker
 @EnableWebSocket

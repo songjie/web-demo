@@ -1,10 +1,3 @@
-/*
- * @(#)HandShake.java $version 2016年3月15日
- *
- * Copyright 2016 LINE Corporation. All rights Reserved. 
- * LINE Corporation PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
-
 package com.demo.websocket.Interceptor;
 
 import java.util.Map;
@@ -19,10 +12,6 @@ import org.springframework.web.socket.server.HandshakeInterceptor;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * @author cn40085
- *
- */
 @Slf4j
 public class WebSocketInterceptor implements HandshakeInterceptor {
 
