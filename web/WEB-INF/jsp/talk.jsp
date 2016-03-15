@@ -15,6 +15,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
 <script type="text/javascript" src="/components/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/components/moment/moment.min.js"></script>
 <style>
 textarea {
 	height: 300px;
@@ -179,7 +180,7 @@ input[type=button] {
 					data["to"]=to;
 					data["text"]=v;
 					websocket.send(JSON.stringify(data));
-					$("#content").append("<div class='tmsg'><label class='name'>我&nbsp;"+new Date().Format("yyyy-MM-dd hh:mm:ss")+"</label><div class='tmsg_text'>"+data.text+"</div></div>");
+					$("#content").append("<div class='tmsg'><label class='name'>我&nbsp;"+moment().format("YYYY-MM-DD HH:mm:ss")+"</label><div class='tmsg_text'>"+data.text+"</div></div>");
 					scrollToBottom();
 					$("#msg").val("");
 				}
@@ -188,22 +189,6 @@ input[type=button] {
 			function scrollToBottom(){
 				var div = document.getElementById('content');
 				div.scrollTop = div.scrollHeight;
-			}
-			
-			Date.prototype.Format = function (fmt) { //author: meizz 
-			    var o = {
-			        "M+": this.getMonth() + 1, //月份 
-			        "d+": this.getDate(), //日 
-			        "h+": this.getHours(), //小时 
-			        "m+": this.getMinutes(), //分 
-			        "s+": this.getSeconds(), //秒 
-			        "q+": Math.floor((this.getMonth() + 3) / 3), //季度 
-			        "S": this.getMilliseconds() //毫秒 
-			    };
-			    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
-			    for (var k in o)
-			    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
-			    return fmt;
 			}
 			
 			function send(event){
