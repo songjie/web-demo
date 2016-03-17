@@ -27,6 +27,7 @@ public class AppWebConfig extends WebMvcConfigurerAdapter {
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/components/**").addResourceLocations("/components/");
 		registry.addResourceHandler("/images/**").addResourceLocations("/images/");
+		registry.addResourceHandler("/swagger2/**").addResourceLocations("/swagger2/");
 	}
 
 }
